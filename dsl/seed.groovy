@@ -4,7 +4,7 @@ def createDeploymentJob(jobName, repoUrl) {
             cpsScm {
                 scm {
                     git {
-                        credentialsId('Git')
+                       // credentialsId('Git')
                         remote {
                             url(repoUrl)
                             
