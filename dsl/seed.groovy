@@ -4,9 +4,10 @@ def createDeploymentJob(jobName, repoUrl) {
             cpsScm {
                 scm {
                     git {
+                        credentialsId('Git')
                         remote {
                             url(repoUrl)
-                            credentialsId('Git')
+                            
                         }
                         branches('master')
                         extensions {
