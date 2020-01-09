@@ -6,6 +6,7 @@ def createDeploymentJob(jobName, repoUrl) {
                     git {
                         remote {
                             url(repoUrl)
+                            credentialsId('Git')
                         }
                         branches('master')
                         extensions {
