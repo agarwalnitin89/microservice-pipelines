@@ -24,7 +24,7 @@ def createTestJob(jobName, repoUrl) {
         branchSources {
             git {
                 id('123456789') // IMPORTANT: use a constant and unique identifier
-                remote(repoURL)
+                remote('https://github.com/agarwalnitin89/microservice-pipelines.git')
                 credentialsId('Git')
                 includes('*')
             }
